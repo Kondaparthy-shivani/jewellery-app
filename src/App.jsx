@@ -11,21 +11,21 @@ function App()
   const collections = [
     { 
       id: 1, 
-      image: "/api/placeholder/600/400", 
+      image: "https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/smstreet/media/media_files/OqLTwLe3DKOSdZJ7t4eE.jpg", 
       title: "Akshaya Tritiya Special", 
       description: "Exclusive collection for this auspicious occasion", 
       tag: "LIMITED EDITION" 
     },
     { 
       id: 2, 
-      image: "/api/placeholder/600/400", 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv-ATYYKxW7_X9GiTptJY3wRr-CBordpZNmA&s", 
       title: "Diamond Elegance", 
       description: "Timeless diamond pieces for your special moments", 
       tag: "PREMIUM" 
     },
     { 
       id: 3, 
-      image: "/api/placeholder/600/400", 
+      image: "https://ommcomnews.com/wp-content/uploads/2023/02/sidharth-malhotra-and-kiara-advani-wedding.jpg", 
       title: "Wedding Collection", 
       description: "Make your special day more memorable", 
       tag: "TRENDING" 
@@ -33,22 +33,22 @@ function App()
   ];
   
   const newArrivals = [
-    { id: 1, image: "/api/placeholder/300/300", name: "Diamond Necklace", price: "₹45,999", rating: 4.9 },
-    { id: 2, image: "/api/placeholder/300/300", name: "Gold Bangles Set", price: "₹32,500", rating: 4.7 },
-    { id: 3, image: "/api/placeholder/300/300", name: "Pearl Earrings", price: "₹12,999", rating: 4.8 },
-    { id: 4, image: "/api/placeholder/300/300", name: "Ruby Ring", price: "₹24,500", rating: 4.6 },
+    { id: 1, image: "https://choodabazar.com/wp-content/uploads/2023/02/WhatsApp-Image-2023-02-02-at-15.15.541.jpeg", name: "Diamond Necklace", price: "₹45,999", rating: 4.9 },
+    { id: 2, image: "https://www.sasitrends.com/cdn/shop/files/2324D-guaranteed-victorian-temple-bangles-ruby-green-stones-sasitrends-online-shopping_32c67ab8-c297-4fa7-9139-c8cc827e0e83.jpg?v=1731480399&width=1080", name: "Gold Bangles Set", price: "₹32,500", rating: 4.7 },
+    { id: 3, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-TTHm5jS8Dpcy4fR3LYGQdw9dRd_dm3Ytfw&s", name: "Pearl Earrings", price: "₹12,999", rating: 4.8 },
+    { id: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmt4imj7J0Hl0kNK1itDPYNA-h5lUzsdvrKg&", name: "Ruby Ring", price: "₹24,500", rating: 4.6 },
   ];
   
   const reviews = [
-    { id: 1, name: "Priya Sharma", image: "/api/placeholder/100/100", rating: 5, text: "The craftsmanship is exceptional! I received so many compliments on my wedding jewelry." },
-    { id: 2, name: "Rajesh Kumar", image: "/api/placeholder/100/100", rating: 4, text: "Great quality and designs. My wife loved the anniversary gift I purchased." },
-    { id: 3, name: "Anita Desai", image: "/api/placeholder/100/100", rating: 5, text: "The diamond necklace I bought is absolutely stunning! Will definitely shop again." },
+    { id: 1, name: "Priya Sharma", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRB_-FbCTKUCvheA5LvkXnfKW2N5dyDR5Rnw&s", rating: 5, text: "The craftsmanship is exceptional! I received so many compliments on my wedding jewelry." },
+    { id: 2, name: "Rajesh Kumar", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEfTVoY1ugw0YQk5qvsXW5Kbvz1S0M2hgvBA&s", rating: 4, text: "Great quality and designs. My wife loved the anniversary gift I purchased." },
+    { id: 3, name: "Anita Desai", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRB_-FbCTKUCvheA5LvkXnfKW2N5dyDR5Rnw&s", rating: 5, text: "The diamond necklace I bought is absolutely stunning! Will definitely shop again." },
   ];
   
   const designers = [
-    { id: 1, name: "Meena Patel", image: "/api/placeholder/200/200", experience: "15+ years", specialty: "Traditional designs" },
-    { id: 2, name: "Vikram Singh", image: "/api/placeholder/200/200", experience: "12+ years", specialty: "Contemporary fusion" },
-    { id: 3, name: "Leela Reddy", image: "/api/placeholder/200/200", experience: "20+ years", specialty: "Diamond jewelry" },
+    { id: 1, name: "Meena Patel", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM7d89v5pNpXsRyiksbvzjaa9XE4s2pFNgUA&s", experience: "15+ years", specialty: "Traditional designs" },
+    { id: 2, name: "Vikram Singh", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUwVdmOcxSVNHET4DLeAUT7vfne7gwjYjrzQ&s", experience: "12+ years", specialty: "Contemporary fusion" },
+    { id: 3, name: "Leela Reddy", image: "https://cdn.gulte.com/wp-content/uploads/2023/06/sree-leela.jpg", experience: "20+ years", specialty: "Diamond jewelry" },
   ];
   
   // Auto-advance carousel
@@ -216,7 +216,7 @@ function App()
           <h2 className="text-3xl font-bold text-center mb-12">Our Collections</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all">
-              <img src="/api/placeholder/400/500" alt="Wedding Collection" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://i.pinimg.com/736x/96/25/34/962534931fa9f99494df038425b0c527.jpg" alt="Wedding Collection" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Wedding Collection</h3>
@@ -229,7 +229,7 @@ function App()
             </div>
             
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all">
-              <img src="/api/placeholder/400/500" alt="Daily Wear Collection" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://www.swashaa.com/cdn/shop/collections/woMen_s_Bracelet_Banner__-min.jpg?v=1739770474&width=1600" alt="Daily Wear Collection" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Daily Wear Collection</h3>
@@ -242,7 +242,7 @@ function App()
             </div>
             
             <div className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all">
-              <img src="/api/placeholder/400/500" alt="Diamond Collection" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+              <img src="https://www.vummidi.com/blog/wp-content/uploads/2024/08/Majestic-Emerald-Diamond-Set.jpg" alt="Diamond Collection" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-white mb-2">Diamond Collection</h3>
