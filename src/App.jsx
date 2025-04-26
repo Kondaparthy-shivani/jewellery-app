@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Heart, Star, Menu, X, ShoppingCart, Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
 
-export default function JewelryWebsite() {
+function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   
@@ -454,3 +454,4 @@ export default function JewelryWebsite() {
     </div>
   );
 }
+export default App;
